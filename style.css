@@ -1,3 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+}
 h1{
     color:black;
+    font:bold;
+    font-family:"Arial Black", sans-serif;
+    margin-left:20px;
+    margin-top:15px;
 }
+nav a{
+    text-decoration: none;
+    color:rgb(160, 142, 252);
+    font-size:1.75rem;
+    opacity: 0.8;
+    margin:30px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+.cover{
+    display:block;
+    width:80%;
+    height:35rem;
+    margin:auto;
+}
+.word1, .word2, .word3{
+    position:absolute;
+    font-size: 2rem;
+    font-weight:bold;
+    font-family:courier;
+}
+.word1{
+    top: 30%;
+    left: 35%;
+}
+.word2{
+    top: 40%;
+    left: 43%;
+}
+.word3{
+    top: 50%;
+    left:58%;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.main{
+    display: grid;
+    height:800px;
+    gap:40px;
+    margin:130px;
+    font-size: 30px;
+}
+.fineart, .light, .productdesign, .photo, .character{
+    text-align:center;
+    border-radius:25px;
+    text-decoration:none;
+    color:black;
+}
+.fineart, .photo{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+.fineart{
+    grid-column:1/2;
+    grid-row:1/4;
+    background-color: rgb(142, 255, 217);
+}
+.light{
+    grid-column:2/5;
+    grid-row:1/2;
+    background-color:rgb(255, 255, 138);
+}
+.productdesign{
+    grid-column:2/4;
+    grid-row:2/4;
+    background-color:rgb(255, 206, 214);
+}
+.photo{
+    grid-column:4/5;
+    grid-row:2/5;
+    background-color:rgb(255, 162, 255);
+}
+.character{
+    grid-column:1/4;
+    grid-row:4/5;
+    background-color:rgb(165, 165, 255);
+}
+
+/* contact css */
+
+.c{
+    font-size:2.5rem;
+    color:black;
+    margin:190px;
+}
+.contact{
+    display:flex;
+    flex-direction: row;
+}
+.contact1{
+    background:rgb(177, 177, 255);
+    width:400px;
+    text-align:left;
+    height:600px;
+    font-size:30px;
+    font-family: 'Turret Road', cursive;
+}
+.contact1-1{
+    margin-top:200px;
+    margin-left:60px;
+}
+.contact1-2{
+    margin-left:120px;
+    margin-top:30px;
+}
+.contact2{
+    background:rgb(255, 255, 128);
+    width:1000px;
+    text-align:left;
+    height:600px;
+    display:flex;
+    flex-direction: row;
+}
+.contact2img{
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    margin:50px;
+    margin-top:200px;
+}
+.contact2-2{
+    margin:50px;
+    margin-top:225px;
+}
+h3{
+    color:black;
+    font:bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height:1.5;
+}
+h4{
+    font-family: 'Turret Road', cursive;
+    line-height:2.5;
+}
+
+/* artwork css*/
+.aw{
+    font-size:2.5rem;
+    color:black;
+    margin:170px;
+}
+
+/* light css*/
+.l{
+    font-size:2.5rem;
+    color:black;
+    margin:170px;
+}
+.L1, .L2, .L3{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(142, 255, 217);
+    border-radius:25px;
+    margin-left:200px;
+    margin-right:200px;
+    margin-top:100px;
+}
+.L1img, .L2img, .L3img{
+    height:400px;
+    width:325px;
+}
+h5{
+    font-family: 'Amatic SC', cursive;
+    font-size:3rem;
+    line-height:1.5;
+}
+h6{font-size:2.5rem;}
+.L1detail, .L2detail, .L3detail{
+    margin:50px;
+}
+.L1content, .L2content, .L3content{
+    color:rgb(0, 0, 174);
+    text-align:right;
+    text-decoration:none;
+    position: absolute;
+}
+.L1content{
+    bottom: 150px;
+    right: 240px;
+}
+.L2content{
+    bottom: -350px;
+    right: 240px;
+}
+.L3content{
+    bottom: -850px;
+    right: 240px;
+}
+
