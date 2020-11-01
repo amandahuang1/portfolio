@@ -2,9 +2,8 @@
     margin:0;
     padding:0;
 }
-h1{
+.h1{
     color:black;
-    font:bold;
     font-family:"Arial Black", sans-serif;
     margin-left:20px;
     margin-top:15px;
@@ -12,7 +11,7 @@ h1{
 nav a{
     text-decoration: none;
     color:rgb(160, 142, 252);
-    font-size:1.75rem;
+    font-size:1.4rem;
     opacity: 0.8;
     margin:30px;
     font-family:"Comic Sans MS", cursive, sans-serif;
@@ -20,18 +19,19 @@ nav a{
 nav{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    padding-top: 20px;
     border-bottom: 3px solid rgb(0, 0, 0);
+    background-color: rgb(216, 249, 255);
 }
 .cover{
     display:block;
-    width:80%;
+    width:95%;
     height:35rem;
     margin:auto;
 }
 .word1, .word2, .word3{
     position:absolute;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight:bold;
     font-family:courier;
 }
@@ -51,19 +51,22 @@ nav{
     position: relative;
     text-align: center;
     color: white;
+    margin:80px;
 }
 .main{
     display: grid;
     height:800px;
     gap:40px;
     margin:130px;
-    font-size: 30px;
+    font-size: 25px;
 }
 .fineart, .light, .productdesign, .photo, .character{
-    text-align:center;
     border-radius:25px;
     text-decoration:none;
     color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .fineart, .photo{
     writing-mode: vertical-lr;
@@ -82,7 +85,7 @@ nav{
 .productdesign{
     grid-column:2/4;
     grid-row:2/4;
-    background-color:rgb(255, 206, 214);
+    background-color:rgb(255, 218, 224);
 }
 .photo{
     grid-column:4/5;
@@ -94,52 +97,49 @@ nav{
     grid-row:4/5;
     background-color:rgb(165, 165, 255);
 }
-
-/* contact css */
-
-.c{
+.H{
     font-size:2.5rem;
     color:black;
-    margin:190px;
+    margin:250px;
 }
+
+/* contact css */
 .contact{
     display:flex;
-    flex-direction: row;
-}
-.contact1{
-    background:rgb(177, 177, 255);
-    width:400px;
-    text-align:left;
-    height:600px;
-    font-size:30px;
-    font-family: 'Turret Road', cursive;
+    flex-direction:row;
+}   
+.contact3{
+    display:flex;
+    flex-direction:column;
+    background:rgb(177, 177, 255);   
+}    
+.contact4{
+    background:rgb(255, 255, 128);
+    padding:250px;
 }
 .contact1-1{
-    margin-top:200px;
-    margin-left:60px;
+    margin-top:100px;
+    font-size:2rem;
+    padding-left:80px;
+    padding-right:80px;
+    padding-top:160px;
 }
 .contact1-2{
     margin-left:120px;
-    margin-top:30px;
-}
-.contact2{
-    background:rgb(255, 255, 128);
-    width:1000px;
-    text-align:left;
-    height:600px;
-    display:flex;
-    flex-direction: row;
+    font-size:2rem; 
+    padding-left:80px;
+    padding-right:80px;
+    padding-bottom:80px;
 }
 .contact2img{
     border-radius:50%;
-    width:200px;
-    height:200px;
-    margin:50px;
-    margin-top:200px;
-}
-.contact2-2{
-    margin:50px;
-    margin-top:225px;
+    width:100px;
+    height:100px;
+}  
+.contact2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 h3{
     color:black;
@@ -151,6 +151,12 @@ h4{
     font-family: 'Turret Road', cursive;
     line-height:2.5;
 }
+.c{
+    font-size:2.5rem;
+    color:black;
+    margin:190px;
+}
+
 
 /* artwork css*/
 .aw{
@@ -206,3 +212,23 @@ h6{font-size:2.5rem;}
     right: 240px;
 }
 
+/* L1*/
+h7{
+    font-family: 'Caveat Brush', cursive, bold;
+}
+h8{
+    font-family:'Satisfy', cursive;
+    line-height:2.5;
+}
+.flex{
+    display:flex;
+}
+.description{
+    margin:50px;
+    font-size:1.5rem;
+}
+.mySlides{
+    margin:50px;
+    width:450px;
+    height:500px;
+}

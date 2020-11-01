@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amanda's Porfolio - Art Work</title>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;700&family=Dancing+Script&family=Indie+Flower&family=Open+Sans+Condensed:wght@300&family=Satisfy&family=Turret+Road:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html" class=h1> Amanda Huang</a>
+            </div>
+            <div class="nav-right">
+                <a href="light.html" class="l">CAMPING LIGHT</a>
+                <a href="artwork.html">Art Work</a>
+                <a href="cv.html">CV</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="flex">
+            <div class="image">
+                <img class="mySlides" src="camping light.JPG">
+                <img class="mySlides" src="camping light-2.jpg">   
+            </div>
+            <script> //slideshow using Javascript
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000); // Change image every 5 seconds
+                }
+            </script>
+
+            <div class="description">
+                <h7>Title</h7><br>
+                <h8>Camping Light, 2020 07</h8><br>
+                <h7>Materials</h7><br>
+                <h8>Recycle Egg Holder, Imitate Cancle Light </h8><br>
+                <h7>Inspiration</h7><br>
+                <h8>Buying egg at the supermarket they provide egg holder for you to bring home. 
+                    Thinking how I can recycle it and made it into a new product. A inspiration of 
+                    relationship of egg and nature came out from my mind. A triangular 
+                    shape light make me think of camping tent.</h8>
+            </div>
+        </div> 
+    </body>
+</html>
