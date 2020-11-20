@@ -105,6 +105,47 @@ nav{
     margin:250px;
 }
 
+@media only screen and (max-width: 600px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        width:80vw;
+    }
+    .fineart, .light, .productdesign, .photo, .character{
+        display:flex;
+        flex-wrap:wrap;
+        writing-mode: horizontal-tb;
+        height:60vh;
+        text-align: center;
+    }
+    .cover{
+        width:100vw;
+        height:80vh;
+        margin:20px;
+    }
+    .H{
+        display:none;
+    }
+    .h1{
+        margin-left:10px;
+        margin-top:15px;
+        font-size:1rem;
+    }
+    .word1{
+
+        left: 15%;
+    }
+    .word2{
+
+        left: 43%;
+    }
+    .word3{
+
+        left:75%;
+    }
+}
+
+
 /* contact css */
 .contact{
     display:flex;
