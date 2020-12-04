@@ -4,7 +4,8 @@
 }
 @media only screen and (max-width: 1280px){
 nav{flex-direction:column;}
-.H,.F, .P,.c,.aw, .l{display:none;}
+.H,.F, .P,.c,.aw, .l, .CV{display:none;}
+.nav-right{text-align:center;}
 }
 /*Index css*/
 .h1{
@@ -249,6 +250,7 @@ h4{
     margin-left:200px;
     margin-right:200px;
     margin-top:100px;
+    flex-wrap:wrap;
 }
 .L1img, .L2img, .L3img{
     height:400px;
@@ -263,55 +265,20 @@ h6{font-size:2.5rem;}
 .L1detail, .L2detail, .L3detail{margin:50px;}
 .L1content, .L2content, .L3content{
     color:rgb(0, 0, 174);
-    text-align:right;
     text-decoration:none;
-    position: absolute;
-}
-.L1content{
-    bottom: 150px;
-    right: 240px;
-}
-.L2content{
-    bottom: -350px;
-    right: 240px;
-}
-.L3content{
-    bottom: -850px;
-    right: 240px;
-}
-@media only screen and (max-width: 950px){
-    .l{display:none;}
-    .L1,.L2, .L3{margin:15px;}
-    h5{font-size:1rem;}
-    h6{font-size:0.5rem;}
-    .L1content{
-        bottom:220px;
-        right:50px;
-    }
-    .L2content{
-        bottom:-200px;
-        right:50px;
-    }
-    .L3content{
-        bottom:-600px;
-        right:50px;
-    }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1180px){
+    .l{display:none;}
+    .L1,.L2, .L3{margin:15px;}
+    h5{font-size:1.5rem;}
+    h6{font-size:1rem;}
+    .L1content, .L2content, .L3content{text-align:right;}
+}
+@media only screen and (max-width: 700px){
     .L1, .L2, .L3{flex-direction:column;}
-    .L1content{
-        right:200px;
-        bottom:70px;
-    }
-    .L2content{
-        right:220px;
-        bottom:-500px;
-    }
-    .L3content{
-        right:220px;
-        bottom:-1070px;
-    }
+    .L1content, .L2content, .L3content{text-align:center;}
+    .F1img, .F2img, .F3img{width:100%;}
 }
 
 /* L1*/
@@ -340,9 +307,15 @@ h8{
 @media only screen and (max-width: 950px){
     .flex{flex-direction:column;}
     .mySlides{
-        margin:40px;
+        margin:0px;
         width:500px;
         height:550px;
+    }
+}
+@media only screen and (max-width: 599px){
+    .flex{flex-direction:column;}
+    .L1img, .L2img, .L3img{
+        width:100%;
     }
 }
 /*CV css*/
@@ -412,9 +385,20 @@ h12{
 }
 
 @media only screen and (max-width: 1000px){
-.cv{flex-direction:column;}
-h11{display:none;}
-}
+    .left{
+        flex-direction:row;
+        display:flex;
+        flex-wrap:wrap;
+        margin:0px;
+    }
+    h11{display:none;}
+    .cv{flex-direction:column;}
+    .education, .award, .personalskill, .technologyskill{
+        padding:15px;
+        width:200px;}
+    }
+    .info2{margin:20px;}
+    .right{margin:20px;}
 
 /* fineart css*/
 .F{
@@ -430,6 +414,7 @@ h11{display:none;}
     margin-left:200px;
     margin-right:200px;
     margin-top:100px;
+    flex-wrap:wrap;
 }
 .F1img, .F2img, .F3img{
     height:400px;
@@ -440,63 +425,27 @@ h5{
     font-size:3rem;
     line-height:1.5;
 }
+
 h6{font-size:2.5rem;}
 .F1detail, .F2detail, .F3detail{margin:50px;}
 .F1content, .F2content, .F3content{
     color:rgb(0, 0, 174);
-    text-align:right;
     text-decoration:none;
-    position: absolute;
-}
-.F1content{
-    bottom: 150px;
-    right: 240px;
-}
-.F2content{
-    bottom: -350px;
-    right: 240px;
-}
-.F3content{
-    bottom: -850px;
-    right: 240px;
 }
 
-@media only screen and (max-width: 950px){
+
+@media only screen and (max-width: 1140px){
     .F{display:none;}
     .F1,.F2, .F3{margin:15px;}
     h5{font-size:1.5rem;}
     h6{font-size:1rem;}
-    .F1content{
-        bottom:220px;
-        right:50px;
-    }
-    .F2content{
-        bottom:-200px;
-        right:50px;
-    }
-    .F3content{
-        bottom:-600px;
-        right:50px;
-    }
+    .L1content, .L2content, .L3content{text-align:right;}
 }
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     .F1, .F2, .F3{flex-direction:column;}
-    .L1content{
-        right:200px;
-        bottom:70px;
-    }
-    .L2content{
-        right:220px;
-        bottom:-500px;
-    }
-    .L3content{
-        right:220px;
-        bottom:-1070px;
-    }
-
+    .L1content, .L2content, .L3content{text-align:center;}
+    .F1img, .F2img, .F3img{width:100%;}
 }
-
 /* photo css*/
 .P{
     font-size:2.5rem;
@@ -511,6 +460,7 @@ h6{font-size:2.5rem;}
     margin-left:200px;
     margin-right:200px;
     margin-top:100px;
+    flex-wrap:wrap;
 }
 .P1img, .P2img, .P3img{
     height:400px;
@@ -522,55 +472,45 @@ h5{
     line-height:1.5;
 }
 h6{font-size:2.5rem;}
-.P1detail, .P2detail, .P3detail{margin:50px;}
+.P1detail, .P2detail, .P3detail{margin:20px;}
 .P1content, .P2content, .P3content{
     color:rgb(0, 0, 174);
     text-align:right;
     text-decoration:none;
-    position: absolute;
 }
-.P1content{
-    bottom: 150px;
-    right: 240px;
-}
-.P2content{
-    bottom: -350px;
-    right: 240px;
-}
-.P3content{
-    bottom: -850px;
-    right: 240px;
-}
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 1050px){
     .P1,.P2, .P3{margin:15px;}
     h5{font-size:1.5rem;}
     h6{font-size:1rem;}
-    .P1content{
-        bottom:220px;
-        right:50px;
-    }
-    .P2content{
-        bottom:-200px;
-        right:50px;
-    }
-    .P3content{
-        bottom:-600px;
-        right:50px;
+    .P1content, .P2content, .P3content{text-align:right;}
+}
+@media only screen and (max-width: 640px){
+    .P1, .P2, .P3{flex-direction:column;}
+    .P1content, .P2content, .P3content{text-align:center;}
+    .P1img, .P2img, .P3img{width:100%;}
+}
+/* Coming Soon css*/
+h13{
+    background-color:rgb(215, 190, 255);
+    color:black;
+    font-size:6rem;
+    margin:300px;
+    text-align:center;
+    display:inline-block;
+    font-family:'Xanh Mono', monospace;
+    padding:20px;
+}
+@media only screen and (max-width: 1180px){
+    h13{
+        font-size: 5rem;
+        margin-top:250px;
+        margin-left:200px;
     }
 }
-
-@media only screen and (max-width: 600px){
-    .P1, .P2, .P3{flex-direction:column;}
-    .P1content{
-        right:200px;
-        bottom:70px;
-    }
-    .P2content{
-        right:220px;
-        bottom:-500px;
-    }
-    .P3content{
-        right:220px;
-        bottom:-1070px;
+@media only screen and (max-width: 780px){
+    h13{
+        font-size: 4rem;
+        margin-top:250px;
+        margin-left:150px;
     }
 }
